@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table{
+vertical-align:top;}
+.card {
+	border-radius: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 175px;
+    height: 260px;
+}
+
+.bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.centered {
+	margin: auto;
+}
+
+.square {
+    margin: auto;
+    margin: 5px;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.player {
+    border: none;
+    transform: scale(.6);
+}
+
+.layout {
+    border: 1px solid black;
+	width:80%;
+    margin: auto;
+    padding: 2em;
+}
+
+.triangle {
+	font-size:60px;
+    color: red;
+}
+
+.circle {
+	font-size:70px;
+    color: blue;
+}
+
+.rectangle {
+	font-size:60px;
+    color: green;
+}
+
+.star {
+	font-size:60px;
+    color: orange;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Using individual padding properties</h2>
+
+<table class="layout">
+  <tr>
+    <th rowspan="3">
+    	<div class="card"><p>Remember the stars.</p>
+    		<table class="bordered centered">
+    			<tr class="bordered">
+                <th class="bordered">
+                <div class="triangle square">&#9650;</div></th>
+                <td class="bordered">
+                <div class="circle square">&#9899;</div></td></tr>
+    			<tr><th class="bordered">
+                <div class="rectangle square">&#9724;</div></th><td class="bordered">
+                <div class="star square">&#9733;</div></td></tr>
+    		</table>
+    	</div>
+</th>
+    <td>
+Amy        		<table class="bordered player">
+    			<tr class="bordered">
+                <th class="bordered">
+                <div class="triangle square">&#9650;</div></th>
+                <td class="bordered">
+                <div class="circle square">&#9899;</div></td></tr>
+    			<tr><th class="bordered">
+                <div class="rectangle square">&#9724;</div></th><td class="bordered">
+                <div class="star square">&#9733;</div></td></tr>
+    		</table>
+</td>
+  </tr>
+  <tr>
+    <td>
+        Amy
+        		<table class="bordered player">
+    			<tr class="bordered">
+                <th class="bordered">
+                <div class="triangle square">&#9650;</div></th>
+                <td class="bordered">
+                <div class="circle square">&#9899;</div></td></tr>
+    			<tr><th class="bordered">
+                <div class="rectangle square">&#9724;</div></th><td class="bordered">
+                <div class="star square">&#9733;</div></td></tr>
+    		</table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    Amy
+        		<table class="bordered player">
+    			<tr class="bordered">
+                <th class="bordered">
+                <div class="triangle square">&#9650;</div></th>
+                <td class="bordered">
+                <div class="circle square">&#9899;</div></td></tr>
+    			<tr><th class="bordered">
+                <div class="rectangle square">&#9724;</div></th><td class="bordered">
+                <div class="star square">&#9733;</div></td></tr>
+    		</table>
+</td>
+  </tr>
+  
+
+</table> 
+</body>
+</html>
