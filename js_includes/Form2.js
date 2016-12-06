@@ -164,7 +164,7 @@ jqueryWidget: {
         this.element.append(dom);
 
         if (this.continueMessage) {
-            this.element.append($("<p>").append($("<a>").attr('href', '').text("\u2192 " + this.continueMessage)
+            this.element.append($("<p>").append($("<a>").attr('href', '').text(this.continueMessage)
                                                 .addClass(ibex_controller_name_to_css_prefix("Message") + "continue-link")
                                                 .click(handler)));
         }
