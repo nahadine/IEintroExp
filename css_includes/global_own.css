@@ -24,6 +24,11 @@ p {
   font-size: large;
 }
 
+p:last-of-type {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
 p.progress-text {
   padding-top: 0em;
   margin-bottom: 0em;
@@ -110,6 +115,11 @@ text-align: left;
     padding-right: 5em;
     padding-bottom: 2em;
     margin-bottom: 30px;
+}
+
+.Form-Form {
+    margin-top: 0em;    
+    margin-bottom: 0em;    
 }
 
 .layoutIntro {
