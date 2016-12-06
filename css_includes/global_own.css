@@ -38,7 +38,8 @@ p.progress-text {
   color: #10AC10;
   font-size:2em;
   text-align:center;
-  margin: 5em;
+  margin-top: 5em;
+  padding: 5em;
 }
 
 .angryFB {
