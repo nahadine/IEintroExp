@@ -3,7 +3,7 @@ import random, os
 questionmarkposition = 0
 
 def make_form_html(prompt,cardtext,target,amycondition,amy,bobcondition,bob,chriscondition,chris):
-    return '''<table class="layout"><tr><td colspan="2"><h2 class="prompt">%s</h2></td></tr><tr><th rowspan="3"><div class="card"><p>%s</p>
+    return '''<table class="layout"><tr><td colspan="2"><h2 class="prompt">%s</h2></td></tr><tr><th rowspan="3"><div class="card"><p class="cardtext">%s</p>
 <table class="bordered centered">
 %s
 </table>
@@ -250,7 +250,7 @@ for i in range(0,10):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('items/ud'+str(i)+'.html','w')
@@ -272,7 +272,7 @@ for i in range(0,10):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('items/ua'+str(i)+'.html','w')
@@ -294,7 +294,7 @@ for i in range(0,10):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('items/oa'+str(i)+'.html','w')
@@ -316,7 +316,7 @@ for i in range(0,10):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('items/od'+str(i)+'.html','w')
@@ -343,7 +343,7 @@ for i in range(0,5):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('fillers/ppf'+str(i)+'.html','w')
@@ -365,7 +365,7 @@ for i in range(0,15):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who knows which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('fillers/ppf'+str(i+5)+'.html','w')
@@ -388,7 +388,7 @@ for i in range(0,5):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who will win 2 points in this round?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('fillers/win'+str(i)+'.html','w')
@@ -411,7 +411,7 @@ for i in range(0,5):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     prompt = 'Who will lose 1 point in this round?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('fillers/lose'+str(i)+'.html','w')
@@ -435,7 +435,7 @@ for i in range(0,10):
     chris = cards[players[2]]
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
-    cardtext = 'Remember the '+target_sym_name+'s'
+    cardtext = 'Remember the<br>'+target_sym_name+'s'
     positions = [0,1,2,3]
     positions.remove(questionmarkposition)
     [j] = random.sample(positions,1)
