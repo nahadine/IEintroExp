@@ -32,10 +32,7 @@ text-align: left;
 }
 
 .cell {
-    text-align: center;
-/*     vertical-align: middle; */
-    width: 80px;
-    height: 80px;
+    padding: 10px;
 }
 
 .player {
@@ -103,7 +100,9 @@ text-align: left;
     font-size:60px;
     color: black;
     background-color: lightgray; 
-
+    height: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 

@@ -61,7 +61,9 @@ def make_form_html(prompt,cardtext,target,amycondition,amy,bobcondition,bob,chri
 </table>''' % (prompt,cardtext,target,amycondition,amy,bobcondition,bob,chriscondition,chris)
 
 def make_card_html( symbols ):
-    return '<tr class="bordered"><td class="bordered">%s</td><td class="bordered">%s</td></tr><tr><td class="bordered">%s</td><td class="bordered">%s</td></tr>' % (make_symbol_div_html(symbols[0]),make_symbol_div_html(symbols[1]),make_symbol_div_html(symbols[2]),make_symbol_div_html(symbols[3]))
+    return '<tr class="bordered">%s%s</tr><tr>%s%s</tr>' % (make_symbol_div_html(symbols[0]),make_symbol_div_html(symbols[1]),make_symbol_div_html(symbols[2]),make_symbol_div_html(symbols[3]))
+
+
 
 def make_symbol_div_html( symbol ):
     if symbol == 'triangle':
@@ -80,12 +82,12 @@ def make_symbol_div_html( symbol ):
 
 symbols = [ 'star', 'circle', 'triangle', 'diamond', 'square' ]
 
-triangle_html = '<div class="triangle cell">&#9650;&#xFE0E;</div>'
-circle_html = '<div class="circle cell">&#9899;&#xFE0E;</div>'
-star_html = '<div class="star cell">&#9733;&#xFE0E;</div>'
-diamond_html = '<div class="diamond cell">&#9670;&#xFE0E;</div>'
-square_html = '<div class="rectangle cell">&#9724;&#xFE0E;</div>'
-questionmark_html = '<div class="questionmark cell">&#63;&#xFE0E;</div>'
+triangle_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td>'
+circle_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
+star_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
+diamond_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
+square_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
+questionmark_html = '<td class="bordered questionmark"><div class="questionmark cell">&#63;&#xFE0E;</div></td>'
 
 cell_names = {0: 'upper left', 1: 'upper right', 2: 'lower left', 3:'lower right'}  
 
@@ -154,10 +156,12 @@ def ua_player( card, target_positions ):
     return player
 
 def ud_player( card, target_positions ):
+    global questionmarkposition
     [wrong_pos] = random.sample(set([0,1,2,3])-set(target_positions), 1)
     wrong_sym = 'questionmark'
     player = [ card[i] if i!=wrong_pos else wrong_sym for i in range(0,4) ]
     questionmarkposition = wrong_pos
+    #print wrong_pos
     return player
 
 #def ud_player_pos( card, target_positions ):
@@ -435,7 +439,7 @@ for i in range(0,10):
     positions = [0,1,2,3]
     positions.remove(questionmarkposition)
     [j] = random.sample(positions,1)
-    print questionmarkposition, j, cell_names[j]
+    #print j, cell_names[j]
     prompt = 'Who knows what the '+cell_names[j]+' symbol is?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('fillers/sym'+str(i)+'.html','w')

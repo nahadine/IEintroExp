@@ -1,0 +1,17 @@
+body{
+  vertical-align: middle;
+}
+.next-item-failure-message {
+  /*margin-top: 5em;
+  vertical-align: middle;*/
+  color: red;
+  font-size:2em;
+  text-align:center;
+}
+.next-item-message {
+  /*margin-top: 5em;
+  vertical-align: middle;*/
+  color: #10AC10;
+  font-size:2em;
+  text-align:center;
+}
