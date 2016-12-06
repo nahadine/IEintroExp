@@ -14,7 +14,7 @@
 <h2>Hello, and thank you for your participation!</h2>
 
 <p>Amy, Bob and Chris are playing a card game to train their memory. Each round, they get to see a different card, but only for a few seconds. All cards consist of four cells, and each cell can contain one of five symbols: a circle, a triangle, a square, a star or a diamond.</p> 
-<p>The aim is to remember where certain symbols appear on the card. Which symbols need to be remembered varies from round to round. If a player manages to recall the position of the relevant symbols correctly, she gets 2 points. If she makes a mistake, she loses 1 point. <b>Each round, players also have the option to withdraw. If they withdraw, they won't win any points, but they won't lose any points either.</b></p>
+<p>The aim is to remember where certain symbols appeared on the card. Which symbols need to be remembered varies from round to round. If a player manages to recall the position of the relevant symbols correctly, she gets 2 points. If she makes a mistake, she loses 1 point. <b>Each round, players also have the option to withdraw. If they withdraw, they won't win any points, but they won't lose any points either.</b></p>
 
 <p>What you will see is the actual card, and how Amy, Bob and Chris remember it. Using this information, you will have to answer a question about Amy, Bob and Chris.</p>
 
@@ -52,7 +52,7 @@ chris: wrong on stars -- nothing-->
 <td>
 <table>
 <tr>
-<td><input id="amy" type="checkbox"></td>
+<td><input id="amy" type="checkbox" disabled></td>
 <td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
 
  <td>
@@ -76,7 +76,7 @@ chris: wrong on stars -- nothing-->
 <td>
 <table>
 <tr>
-<td><input id="bob" type="checkbox"></td>
+<td><input id="bob" type="checkbox" disabled></td>
 <td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
 
  <td>
@@ -100,7 +100,7 @@ chris: wrong on stars -- nothing-->
 <td>
 <table>
 <tr>
-<td><input id="chris" type="checkbox"></td>
+<td><input id="chris" type="checkbox" disabled></td>
 <td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
 
  <td>
@@ -153,7 +153,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="amy" type="checkbox"></td>
+<td><input id="amy" type="checkbox" disabled></td>
 <td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
 
  <td>
@@ -177,7 +177,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="bob" type="checkbox"></td>
+<td><input id="bob" type="checkbox" disabled></td>
 <td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
 
  <td>
@@ -201,7 +201,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="chris" type="checkbox"></td>
+<td><input id="chris" type="checkbox" disabled></td>
 <td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
 
  <td>
@@ -256,7 +256,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="amy" type="checkbox"></td>
+<td><input id="amy" type="checkbox" disabled></td>
 <td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
 
  <td>
@@ -280,7 +280,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="bob" type="checkbox"></td>
+<td><input id="bob" type="checkbox" disabled></td>
 <td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
 
  <td>
@@ -304,7 +304,7 @@ Chris SE-->
 <td>
 <table>
 <tr>
-<td><input id="chris" type="checkbox"></td>
+<td><input id="chris" type="checkbox" disabled></td>
 <td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
 
  <td>
@@ -365,7 +365,7 @@ version B
 <td>
 <table>
 <tr>
-<td><input id="amy" type="checkbox"></td>
+<td><input id="amy" type="checkbox" disabled></td>
 <td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
 
  <td>
@@ -390,7 +390,7 @@ version B
 <td>
 <table>
 <tr>
-<td><input id="bob" type="checkbox"></td>
+<td><input id="bob" type="checkbox" disabled></td>
 <td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
 
  <td>
@@ -415,7 +415,7 @@ version B
 <td>
 <table>
 <tr>
-<td><input id="chris" type="checkbox"></td>
+<td><input id="chris" type="checkbox" disabled></td>
 <td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
 
  <td>
@@ -435,8 +435,8 @@ version B
 </td>
 </tr>
 <tr><td colspan="2" class="feedback">
-<p>Here, we can't know whether Amy will win 2 points since she is unsure about the lower left symbol. If she decides to withdraw, she won't win any points. But if she decides to play, she will win 2 points.</p><p>
-On the other hand, we have reason to believe that Bob will win 2 points, while Chris will lose 1 point.</p>
+<p>Here, we can't know for sure whether Amy will win 2 points since she is unsure about the lower left symbol. If she decides to withdraw, she won't win any points. But if she decides to play, she will win 2 points.</p><p>
+On the other hand, Bob will certainly win 2 points, while Chris will definitely lose 1 point.</p>
 
 <!-- Here, we can't know whether Amy will win 2 points since she is unsure about the lower left symbol. If she gets this symbol right, she will win 2 points, but if she gets it wrong, she will lose 1 point. On the other hand, Bob will win 2 points, while Chris will lose 1 point. -->
 
@@ -453,6 +453,7 @@ On the other hand, we have reason to believe that Bob will win 2 points, while C
 <ul>
 <li>Always select all the correct answers before moving to the next item.</li>
 <li>In some cases you might be unsure which answers to select. If this happens, follow your intuition!</li>
+<li>If the checkboxes are too small (e.g., if you are using a tablet), you can click on the characters themselves.</li>
 <li>The experiment will take about 15 minutes.</li>
 </ul>
 </div>
