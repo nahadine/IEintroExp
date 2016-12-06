@@ -34,6 +34,17 @@ p.progress-text {
   margin-bottom: 0em;
 }
 
+.correctFB {
+  color: #10AC10;
+  font-size:2em;
+  text-align:center;
+}
+
+.angryFB {
+  color: #FF0000;
+  font-size:1.25em;  
+  text-align:center;
+}
 
 
 .bar-container {
