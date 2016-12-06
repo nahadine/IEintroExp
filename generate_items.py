@@ -83,11 +83,11 @@ def make_symbol_div_html( symbol ):
 symbols = [ 'star', 'circle', 'triangle', 'diamond', 'square' ]
 
 triangle_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td>'
-circle_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
-star_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
-diamond_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
-square_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>'
-questionmark_html = '<td class="bordered questionmark"><div class="questionmark cell">&#63;&#xFE0E;</div></td>'
+circle_html = '<td class="bordered tdStdSize"><div class="cell circle"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif" height=50px; width=50px;></div></td>'
+star_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td>'
+diamond_html = '<td class="bordered"><div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td>'
+square_html = '<td class="bordered tdStdSize"><div class="cell square"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/square.gif" height=40px; width=40px;></div></td>'
+questionmark_html = '<td class="bordered questionmark"><div class="cell">&#63;&#xFE0E;</div></td>'
 
 cell_names = {0: 'upper left', 1: 'upper right', 2: 'lower left', 3:'lower right'}  
 
@@ -351,7 +351,7 @@ for i in range(0,5):
     f.close()
 
 # 15 SE PERFECT FALSE with 2 target symbols 
-for i in range(0,5):
+for i in range(0,15):
     c = make_card()
     c_html = make_card_html(c[0])
     cards = {'perfect': c_html, 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
