@@ -34,14 +34,24 @@ p.progress-text {
 }
 
 .Message-continue-link {
+  padding-top: 0em;
+  margin-top: 0em;
   padding-bottom: 5em;
   font-weight: bold;
   margin-left: 35%;
 
 }
 
-.prompt {
+.promptIntro {
 padding-top: 40px;
+/* margin-right: 3em; */
+/* margin-bottom: 3em; */
+text-align: left;
+
+}
+
+.prompt {
+/* padding-top: 40px; */
 /* margin-right: 3em; */
 /* margin-bottom: 3em; */
 text-align: left;
