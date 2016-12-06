@@ -58,7 +58,7 @@ text-align: left;
 }
 
 .cardtext {
-padding-top: 10px;
+padding-top: 15px;
 padding-bottom: 10px;
 }
 
@@ -145,7 +145,7 @@ margin-bottom: 0em;
 
 
 .questionmark {
-    font-size:50px;
+    font-size:40px;
     color: black;
     background-color: lightgray; 
     height: 56px;
