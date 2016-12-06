@@ -43,7 +43,7 @@ p.progress-text {
 .Message-continue-link {
   padding-top: 0em;
   margin-top: 0em;
-  padding-bottom: 5em;
+  padding-bottom: 0em;
   font-weight: bold;
   margin-left: 35%;
 
@@ -59,7 +59,7 @@ text-align: left;
 
 .prompt {
 text-align: left;
-
+margin-bottom: 0em;
 }
 
 .card {
