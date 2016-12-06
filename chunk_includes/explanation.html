@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+
+<div class="instructions">
+<h2>Hello, and thank you for your participation!</h2>
+
+<p>Amy, Bob and Chris are playing a card game to train their memory. Each round, they get to see a different card, but only for a few seconds. All cards consist of four cells, and each cell can contain one of five symbols: a circle, a triangle, a square, a star or a diamond.</p> 
+<p>The aim is to remember where certain symbols appear on the card. Which symbols need to be remembered varies from round to round. If a player manages to recall the position of the relevant symbols correctly, she gets 2 points. If she makes a mistake, she loses 1 point. <b>Each round, players also have the option to withdraw. If they withdraw, they won't win any points, but they won't lose any points either.</b></p>
+
+<p>What you will see is the actual card, and how Amy, Bob and Chris remember it. Using this information, you will have to answer a question about Amy, Bob and Chris.</p>
+
+<h3>Let's look at a few examples:</h3>
+</div>
+
+<!--###################################################-->
+<!-- 1  -->
+<!--amy: perfect SE
+bob: correct on stars SE
+chris: wrong on stars -- nothing-->
+
+
+<!--###################################################-->
+<form action="">
+<table class="layout">
+
+<tr><td colspan="2"><h2 class="promptIntro">Who knows which of the shapes are stars?</h2></td></tr>
+<tr>
+    <th rowspan="3">
+        <div class="card"><p>Remember the stars</p>
+            <table class="bordered centered">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+            </table>
+        </div>
+</td>
+
+
+<td>
+<table>
+<tr>
+<td><input id="amy" type="checkbox"></td>
+<td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="bob" type="checkbox"></td>
+<td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="chris" type="checkbox"></td>
+<td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr><td colspan="2" class="feedback"><p>Here you would select Amy and Bob. Amy remembers the card exactly as it was. Bob got some of the symbols wrong, but he remembers the position of the stars correctly. On the other hand, you would <i>not</i> select Chris since he is wrong about the stars.</p></td></tr>
+
+
+</table>
+</form>
+<!--###################################################-->
+<!--2  -->
+<!--Amy nothing w/ questionmark
+Bob nothing wrong
+Chris SE-->
+<!--###################################################-->
+<form action="">
+<table class="layout">
+
+<tr><td colspan="2"><h2 class="promptIntro">Who knows which of the shapes are triangles?</h2></td></tr>
+<tr>
+    <th rowspan="3">
+        <div class="card"><p>Remember the triangles</p>
+            <table class="bordered centered">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+            </table>
+        </div>
+</td>
+
+
+<td>
+<table>
+<tr>
+<td><input id="amy" type="checkbox"></td>
+<td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="questionmark cell">&#63;</div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td><td class="bordered">
+                <div class="questionmark cell">&#63;</div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="bob" type="checkbox"></td>
+<td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="chris" type="checkbox"></td>
+<td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr><td colspan="2" class="feedback"><p>Sometimes, a player will not remember some symbols. If a player doesn't remember a symbol, this will be indicated by a question mark. Here, Amy doesn't remember the symbols in the two cells on the right side. In this situation you would not select Amy since she can't remember the triangles.</p><p>You wouldn't select Bob either because he doesn't remember the position of the triangles correctly. On the other hand, you <i>would</i> select Chris since he remembers the card exactly as it was.</p>
+</td></tr>
+
+</table>
+</form>
+<!--###################################################-->
+<!-- 3 -->
+
+<!--1x correct w/ questionmark
+1x nothing 
+1x SE
+-->
+
+
+<!--###################################################-->
+<form action="">
+<table class="layout">
+
+<tr><td colspan="2"><h2 class="promptIntro">Who knows what the upper left symbol is?</h2></td></tr>
+<tr>
+    <th rowspan="3">
+        <div class="card"><p>Remember the circles</p>
+            <table class="bordered centered">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/square.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+        </div>
+</td>
+
+
+<td>
+<table>
+<tr>
+<td><input id="amy" type="checkbox"></td>
+<td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/circle.gif"></div></td>
+                <td class="bordered">
+                <div class="questionmark cell">&#63;</div></td></tr>
+                <tr><td class="bordered">
+                <div class="questionmark cell">&#63;</div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="bob" type="checkbox"></td>
+<td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/square.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="chris" type="checkbox"></td>
+<td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="questionmark cell">&#63;</div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/square.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="2" class="feedback">
+<p>Here, you would select only Amy. Although Amy doesn't remember two of the symbols, she still remembers the upper left symbol correctly&#8212;and this is what was asked here. On the other hand, you wouldn't select Bob or Chris since neither of them remembers the upper left symbol correctly.</p>
+</td></tr>
+
+</table>
+</form>
+<!--###################################################-->
+<!-- 4 -->
+<!--version A
+1x questionmark, IE: unsure. because might withdraw but if he doesn't might win
+1x SE
+1x nothing
+
+version B
+1x questionmark, IE: unsure. because might get ?-cell wrong but if he doesn't might win
+1x SE
+1x nothing-->
+
+<!--###################################################-->
+<form action="">
+<table class="layout">
+
+<tr><td colspan="2"><h2 class="promptIntro">Who will win 2 points in this round?</h2></td></tr>
+<tr>
+    <th rowspan="3">
+        <div class="card"><p>Remember the diamonds</p>
+            <table class="bordered centered">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+        </div>
+</td>
+
+
+<td>
+<table>
+<tr>
+<td><input id="amy" type="checkbox"></td>
+<td><label for="amy"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Amy</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="questionmark cell">&#63;</div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="bob" type="checkbox"></td>
+<td><label for="bob"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Bob</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td><input id="chris" type="checkbox"></td>
+<td><label for="chris"><img class="player-img" src="https://nadinetheiler.net/pics/player.png"><p class="playername">Chris</p></label></td>
+
+ <td>
+            <table class="bordered player">
+                <tr class="bordered">
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td>
+                <td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/diamond.gif"></div></td></tr>
+                <tr><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/triangle.gif"></div></td><td class="bordered">
+                <div class="cell"><img  src="https://raw.githubusercontent.com/nahadine/IEintroExp/master/pics/star.gif"></div></td></tr>
+            </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="2" class="feedback">
+<p>Here, we can't know whether Amy will win 2 points since she is unsure about the lower left symbol. If she decides to withdraw, she won't win any points. But if she decides to play, she will win 2 points.</p><p>
+On the other hand, we have reason to believe that Bob will win 2 points, while Chris will lose 1 point.</p>
+
+<!-- Here, we can't know whether Amy will win 2 points since she is unsure about the lower left symbol. If she gets this symbol right, she will win 2 points, but if she gets it wrong, she will lose 1 point. On the other hand, Bob will win 2 points, while Chris will lose 1 point. -->
+
+</td></tr>
+
+
+</table>
+</form>
+<!--###################################################-->
+
+
+<div class="instructions">
+<h3>Here are some final recommendation before you start the experiment:</h3>
+<ul>
+<li>Always select all the correct answers before moving to the next item.</li>
+<li>In some cases you might be unsure which answers to select. If this happens, follow your intuition!</li>
+<li>The experiment will last about ...min.</li>
+</ul>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
