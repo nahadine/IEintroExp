@@ -132,6 +132,10 @@ text-align: left;
     padding: 20px;
  }
 
+ .circle {
+    padding: 15px;
+ }
+
 .tdStdSize {
     height: 58px;
     width: 58px;
