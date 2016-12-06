@@ -132,6 +132,11 @@ text-align: left;
     padding-left: 20px;
  }
 
+.tdStdSize {
+    height: 58px;
+    width: 58px;
+} 
+ 
 
 .feedback{
     padding-top: 15px;
