@@ -22,11 +22,17 @@ margin-top: 0em;
 
 p {
   font-size: large;
+  margin-top: 0em;
 }
 
 p.progress-text {
   padding-top: 0em;
   margin-bottom: 0em;
+}
+
+.Form-Form {
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .bar-container {
@@ -107,7 +113,7 @@ text-align: left;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .layoutIntro {
