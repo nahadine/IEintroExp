@@ -1,0 +1,198 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+margin-top: 0em;
+}
+
+p {
+  font-size: large;
+}
+
+p:last-of-type {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+p.progress-text {
+  padding-top: 0em;
+  margin-bottom: 0em;
+}
+
+.correctFB {
+  color: #10AC10;
+  font-size:2em;
+  text-align:center;
+  margin-top: 5em;
+  padding: 5em;
+}
+
+.angryFB {
+  color: #FF0000;
+  font-size:1.25em;  
+  text-align:center;
+}
+
+
+.bar-container {
+  height: 0em;
+}
+
+.Message-continue-link {
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-bottom: 0em;
+  font-weight: bold;
+  margin-left: 35%;
+
+}
+
+.promptIntro {
+padding-top: 40px;
+/* margin-right: 3em; */
+/* margin-bottom: 3em; */
+text-align: left;
+
+}
+
+.cardtext {
+padding-top: 15px;
+padding-bottom: 10px;
+}
+
+
+.prompt {
+text-align: left;
+margin-bottom: 0em;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 295px;
+}
+
+.bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.centered {
+    margin: auto;
+}
+
+.bottom-aligned {
+    vertical-align: bottom;
+}
+
+.cell {
+    padding: 10px;
+}
+
+
+.player {
+    transform: scale(.7);
+    float:left;
+}
+
+.player-img {
+    width: 100px;
+    margin-top: 40px;
+/*     padding-left: 20px; */
+}
+
+.playername {
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.layout {
+    width:65%;
+    margin: auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    margin-bottom: 0em;
+}
+
+.Form-Form {
+    margin-top: 0em;    
+    margin-bottom: 0em;    
+}
+
+.layoutIntro {
+    border: 1px solid black;
+    width:65%;
+    margin: auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    margin-bottom: 30px;
+}
+
+
+.instructions{
+    width:50%;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+
+.questionmark {
+    font-size:40px;
+    color: black;
+    background-color: lightgray; 
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.square {
+    padding: 20px;
+ }
+
+ .circle {
+    padding: 15px;
+ }
+
+.tdStdSize {
+    height: 58px;
+    width: 58px;
+} 
+ 
+
+.feedback{
+    padding-top: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+input {
+    margin-right: 30px;
+    margin-left: 45px;
+}
+
+li {
+    padding-bottom: 14px;
+}

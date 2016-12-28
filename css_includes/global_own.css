@@ -196,3 +196,27 @@ input {
 li {
     padding-bottom: 14px;
 }
+
+.prompt {
+padding-top: 20px;
+/* margin-right: 3em; */
+/* margin-bottom: 3em; */
+text-align: center;
+font-weight: bold;
+font-size: 130%;
+}
+
+.card {
+  margin-right: 75px;
+}
+
+.CBanswer {
+    width: 10em;
+/*  text-align:center;*/
+}
+
+input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+

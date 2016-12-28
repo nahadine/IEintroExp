@@ -1,0 +1,123 @@
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+.prompt {
+padding-top: 20px;
+/* margin-right: 3em; */
+/* margin-bottom: 3em; */
+text-align: left;
+
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 295px;
+}
+
+.bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.centered {
+    margin: auto;
+}
+
+.bottom-aligned {
+    vertical-align: bottom;
+}
+
+.cell {
+    padding: 10px;
+}
+
+.player {
+    transform: scale(.7);
+    float:left;
+}
+
+.player-img {
+    width: 100px;
+    margin-top: 40px;
+/*     padding-left: 20px; */
+}
+
+.playername {
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.layout {
+    border: 1px solid black;
+    width:65%;
+    margin: auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    margin-bottom: 30px;
+}
+
+.instructions{
+    width:50%;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 5em;
+}
+
+
+.triangle {
+    font-size:60px;
+    color: red;
+}
+
+.circle {
+    font-size:70px;
+    color: blue;
+}
+
+.rectangle {
+    font-size:60px;
+    color: green;
+}
+
+.star {
+    font-size:60px;
+    color: orange;
+}
+
+
+.diamond {
+    font-size:60px;
+    color: turquoise;
+}
+
+.questionmark {
+    font-size:60px;
+    color: black;
+    background-color: lightgray; 
+    height: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+.feedback{
+    padding-top: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+input {
+    margin-right: 30px;
+}
+
+li {
+    padding-bottom: 14px;
+}
