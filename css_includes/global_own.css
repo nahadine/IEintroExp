@@ -72,21 +72,16 @@ text-align: left;
 
 .cardtext {
 padding-top: 15px;
-padding-bottom: 10px;
+padding-bottom: 20px;
 }
 
-
-.prompt {
-text-align: left;
-margin-bottom: 0em;
-}
 
 .card {
     border-radius: 12px;
     border: 1px solid black;
     padding: 10px;
-    width: 200px;
-    height: 295px;
+    width: 250px;
+    height: 370px;
 }
 
 .bordered {
@@ -199,11 +194,10 @@ li {
 
 .prompt {
 padding-top: 20px;
-/* margin-right: 3em; */
-/* margin-bottom: 3em; */
 text-align: center;
 font-weight: bold;
-font-size: 130%;
+font-size: 150%;
+margin-bottom: 0em;
 }
 
 .card {
@@ -211,8 +205,10 @@ font-size: 130%;
 }
 
 .CBanswer {
-    width: 10em;
-/*  text-align:center;*/
+ width: 10em;
+/*  text-align:center; */
+padding-left: 30px;
+padding-top: 10px;
 }
 
 input {

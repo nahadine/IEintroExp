@@ -446,7 +446,7 @@ for i in range(0,5):
     f.close()
 
 # and 5 with 3 target symbols
-for i in range(0,5):
+for i in range(5,10):
     c = make_card_3_target_syms()
     c_html = make_card_html(c[0])
     cards = {'od': make_card_html(od_player(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
@@ -495,7 +495,7 @@ for i in range(0,5):
 
 # 5 SE PERFECT FALSE with 2 target symbols 
 # used to be 15
-for i in range(0,15):
+for i in range(0,5):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'perfect': c_html, 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
