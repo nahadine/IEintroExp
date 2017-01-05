@@ -370,7 +370,7 @@ for i in range(0,2):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=UD_2targets_role=target', 'true':'_item=UD_2targets_role=truecontrol', 'false':'_item=UD_2targets_role=falsecontrol'}
+    conditions = {'ud':'_item=UD_2targets_role=target_2qums', 'true':'_item=UD_2targets_role=truecontrol', 'false':'_item=UD_2targets_role=falsecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -391,7 +391,7 @@ for i in range(0,2):
 c = make_card_2_target_syms_3_non_target_syms()
 c_html = make_card_html(c[0])
 cards = {'ud': make_card_html(ud_player(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-conditions = {'ud':'_item=UD_2targets_role=target', 'true':'_item=UD_2targets_role=truecontrol', 'false':'_item=UD_2targets_role=falsecontrol'}
+conditions = {'ud':'_item=UD_2targets_role=target_2qums', 'true':'_item=UD_2targets_role=truecontrol', 'false':'_item=UD_2targets_role=falsecontrol'}
 players = ['ud', 'true', 'false']
 random.shuffle(players)
 amy = cards[players[0]]
@@ -414,7 +414,7 @@ for i in range(3,5):
     c = make_card_3_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player_3_target_symbols(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=UD_3targets_role=target', 'true':'_item=UD_3targets_role=truecontrol', 'false':'_item=UD_3targets_role=falsecontrol'}
+    conditions = {'ud':'_item=UD_3targets_role=target_2qums', 'true':'_item=UD_3targets_role=truecontrol', 'false':'_item=UD_3targets_role=falsecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -438,7 +438,7 @@ for i in range(0,2):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ua': make_card_html(ua_player(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ua':'_item=UA_2targets_role=target', 'true':'_item=UA_2targets_role=truecontrol', 'false':'_item=UA_2targets_role=falsecontrol'}
+    conditions = {'ua':'_item=UA_2targets_role=target_2qums', 'true':'_item=UA_2targets_role=truecontrol', 'false':'_item=UA_2targets_role=falsecontrol'}
     players = ['ua', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -684,7 +684,7 @@ for i in range(0,5):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=winFiller_2targets_role=UDtarget', 'true':'_item=winFiller_2targets_role=truecontrol', 'false':'_item=winFiller_2targets_role=falsecontrol'}
+    conditions = {'ud':'_item=winFiller_2targets_role=UDtarget_2qums', 'true':'_item=winFiller_2targets_role=truecontrol', 'false':'_item=winFiller_2targets_role=falsecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -705,7 +705,7 @@ for i in range(5,10):
     c = make_card_3_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player_3_target_symbols(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=winFiller_3targets_role=UDtarget', 'true':'_item=winFiller_3targets_role=truecontrol', 'false':'_item=winFiller_3targets_role=falsecontrol'}
+    conditions = {'ud':'_item=winFiller_3targets_role=UDtarget_2qums', 'true':'_item=winFiller_3targets_role=truecontrol', 'false':'_item=winFiller_3targets_role=falsecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -729,7 +729,7 @@ for i in range(0,5):
     c = make_card_3_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player_3_target_symbols_3_qums(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=loseFiller_3targets_role=UDtarget', 'true':'_item=loseFiller_3targets_role=falsecontrolSE', 'false':'_item=loseFiller_3targets_role=truecontrol'}
+    conditions = {'ud':'_item=loseFiller_3targets_role=UDtarget_3qums', 'true':'_item=loseFiller_3targets_role=falsecontrolSE', 'false':'_item=loseFiller_3targets_role=truecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -750,7 +750,7 @@ for i in range(5,10):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player_2_target_symbols_3_qums(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'false': make_card_html(false_player(c[0],c[1]))}
-    conditions = {'ud':'_item=loseFiller_2targets_role=UDtarget', 'true':'_item=loseFiller_2targets_role=falsecontrolSE', 'false':'_item=loseFiller_2targets_role=truecontrol'}
+    conditions = {'ud':'_item=loseFiller_2targets_role=UDtarget_3qums', 'true':'_item=loseFiller_2targets_role=falsecontrolSE', 'false':'_item=loseFiller_2targets_role=truecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -776,7 +776,7 @@ for i in range(0,5):
     c_html = make_card_html(c[0])
     [n] = random.sample([0,1,4,5],1)
     cards = {'ud': make_card_html(ud_player_for_filler(c[0],c[1],n)), 'true': make_card_html(se_player_for_filler(c[0],c[1],n)), 'false': make_card_html(wrong_about_n_player(c[0],c[1],n))}
-    conditions = {'ud':'_item=whichSymbolFiller_2targets_role=UDtargetTrue', 'true':'_item=whichSymbolFiller_2targets_role=truecontrol', 'false':'_item=whichSymbolFiller_2targets_role=falsecontrol'}
+    conditions = {'ud':'_item=whichSymbolFiller_2targets_role=UDtargetTrue_1qums', 'true':'_item=whichSymbolFiller_2targets_role=truecontrol', 'false':'_item=whichSymbolFiller_2targets_role=falsecontrol'}
     players = ['ud', 'true', 'false']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -803,7 +803,7 @@ for i in range(0,5):
     c = make_card_2_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player(c[0],c[1])), 'true': make_card_html(certain_but_wrong_player(c[0],c[1])), 'ua': make_card_html(ua_player(c[0],c[1]))}
-    conditions = {'ud':'_item=certainFiller_2targets_role=UDtargetFalse', 'true':'_item=certainFiller_2targets_role=truecontrol', 'ua':'_item=certainFiller_2targets_role=falsecontrol'}
+    conditions = {'ud':'_item=certainFiller_2targets_role=UDtargetFalse_2qums', 'true':'_item=certainFiller_2targets_role=truecontrol', 'ua':'_item=certainFiller_2targets_role=falsecontrol'}
     players = ['ud', 'true', 'ua']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -824,7 +824,7 @@ for i in range(5,10):
     c = make_card_3_target_syms()
     c_html = make_card_html(c[0])
     cards = {'ud': make_card_html(ud_player_3_target_symbols(c[0],c[1])), 'true': make_card_html(se_player(c[0],c[1])), 'ua': make_card_html(ua_player(c[0],c[1]))}
-    conditions = {'ud':'_item=certainFiller_3targets_role=UDtargetFalse', 'true':'_item=certainFiller_3targets_role=truecontrol', 'ua':'_item=certainFiller_3targets_role=falsecontrol'}
+    conditions = {'ud':'_item=certainFiller_3targets_role=UDtargetFalse_2qums', 'true':'_item=certainFiller_3targets_role=truecontrol', 'ua':'_item=certainFiller_3targets_role=falsecontrol'}
     players = ['ud', 'true', 'ua']
     random.shuffle(players)
     amy = cards[players[0]]
@@ -835,7 +835,7 @@ for i in range(5,10):
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
     cardtext = 'Remember the<br>'+target_sym_name+'s'
-    prompt = 'Who is certain which of the shapes are '+target_sym_name+'s?'
+    prompt = 'Who is certain about which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('chunk_includes/certain'+str(i)+'.html','w')
     f.write(html)
