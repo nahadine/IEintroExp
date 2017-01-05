@@ -814,7 +814,7 @@ for i in range(0,5):
     chriscondition = conditions[players[2]]
     target_sym_name = c[0][c[1][0]]
     cardtext = 'Remember the<br>'+target_sym_name+'s'
-    prompt = 'Who is certain which of the shapes are '+target_sym_name+'s?'
+    prompt = 'Who is certain about which of the shapes are '+target_sym_name+'s?'
     html = make_form_html(prompt,cardtext,c_html,amycondition,amy,bobcondition,bob,chriscondition,chris)
     f = open('chunk_includes/certain'+str(i)+'.html','w')
     f.write(html)
