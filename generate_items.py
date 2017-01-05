@@ -58,9 +58,9 @@ def make_form_html(prompt,cardtext,target,amycondition,amy,bobcondition,bob,chri
   <tr><td colspan="2"><p class="prompt">%s</p></td></tr>
   <tr><td colspan="2"><table>
   <tr>
-    <td class="CBanswer"><p class="playername"><input name="amy%s" id="amy" type="checkbox"><label for="amy">Amy</label></p></td>
-    <td class="CBanswer"><p class="playername"><input name="bob%s" id="bob" type="checkbox"><label for="bob">Bob</label></p></td>
-    <td class="CBanswer"><p class="playername"><input name="chris%s" id="chris" type="checkbox"><label for="chris">Chris</label></p></td>
+    <td class="CBanswer"><label for="amy"><p class="playername"><input name="amy%s" id="amy" type="checkbox">Amy</p></label></td>
+    <td class="CBanswer"><label for="bob"><p class="playername"><input name="bob%s" id="bob" type="checkbox">Bob</p></label></td>
+    <td class="CBanswer"><label for="chris"><p class="playername"><input name="chris%s" id="chris" type="checkbox">Chris</p></label></td>
   </td></tr>
 </table></tr>
 </table>''' % (cardtext,target,amy,bob,chris,prompt,amycondition,bobcondition,chriscondition)
